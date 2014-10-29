@@ -1,9 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
-
+@font-face {
+}
 * {
 	margin: 0;
 	padding: 0;
+}
+li {
+	list-style: none;
 }
 body {
 	min-width: 960px;
@@ -15,11 +19,13 @@ body {
 	width: 960px;
 }
 #header {
-	height: 100px;
-	line-height: 100px;
+	height: 142px;
+	line-height: 142px;
+}
+#header img {
+	margin-left: 10px;
 }
 #header ul {
-	list-style: none;
 	height: 10px;
 	float: right;
 }
@@ -35,6 +41,9 @@ body {
 	display: inline-block;
 	text-decoration: none;
 	color: #777;
+	font-family: "楷体", Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
 }
 #header li:hover a::after {
 	content: "";
@@ -43,17 +52,18 @@ body {
 	height: 6px;
 	background: #27ABC4;
 	position: absolute;
-	top: 30px;
+	top: 50px;
 }
 #header .shrinker span {
 	font-size: 40px;
-	font: Arial, Helvetica, sans-serif;
+	font: "Aharoni", Helvetica, sans-serif;
 }
 #header .shrinker span+span {
 	color: #20AAC6;
 }
 #gallery {
-	background: #82E4ED;
+	background: #82E4ED;/*background-image: url(site/bg-highlight.png);
+	background-size: cover;*/
 }
 #gallery .shrinker {
 	padding-top: 20px;
@@ -84,15 +94,112 @@ body {
 #picswitcher a:hover {
 	border-color: white;
 }
-#content table {
-	margin: 0 auto;
-	width: 960px;
-	text-align: center;
-}
-#content td {
-	height: 100px;
-	border: solid 1px;
+#content {
+	overflow: hidden;
 }
 #content img {
 	vertical-align: middle;
+}
+#leftpad {
+	width: 640px;
+	float: left;
+}
+#rightpad {
+	background: #D4FFFF;
+}
+.pad {
+	margin: 20px 0;
+	border: #aaa dotted 1px;
+	border-radius: 7px;
+	padding: 10px;
+	color: #777;
+	background-image: url(site/bg_2.jpg);
+	background-repeat: repeat;
+}
+.pad h3 {
+	margin-bottom: 5px;
+}
+.pad h3 label.topicn {
+	margin: 0 10px;
+	color: #555;
+}
+.pad h3 label.topicen {
+	color: #A0A0A4;
+	font-family: Vijaya, Geneva, sans-serif;
+	font-size: 24px;
+	font-weight: lighter;
+	font-style: italic;
+}
+.pad p {
+	text-indent: 30px;
+	line-height: 26px;
+}
+#onduty ul {
+	overflow: hidden;
+	margin-top: 10px;
+}
+#onduty li {
+	float: left;
+	margin: 10px;
+	padding: 5px;
+	width: 200px;
+	text-align: center;/*	background: #ddd;*/
+}
+/*#onduty li+li {
+	border-left: #A0A0A4 solid 1px;
+}*/
+#onduty li img {
+	display: block;
+	float: left;
+	height: 100px;
+	width: 100px;
+	border-radius: 60px;
+	border: solid 3px #ddd;
+}
+#onduty p {
+	text-indent: 0;
+	vertical-align: top;
+	line-height: 50px;
+	color: #A2B068;
+	font-size: 16px;
+	font-weight: 100;
+}
+#onduty p+p {
+	color: #555;
+}
+#disease li {
+	line-height: 32px;
+	list-style-image: url(site/20141028115829370_easyicon_net_17.7777777778.png);
+	margin: 0 10px;
+	list-style-position: inside;
+}
+#disease li:hover {
+	cursor: pointer;
+	color: orange;
+}
+#disease li+li {
+	border-top: dotted 1px gray;
+}
+#footer {
+	background: #21A7B2;
+	overflow: hidden;
+	color: #444;
+}
+#footer table {
+	border: solid 1px #00DF55;
+}
+#footer td {
+	padding: 20px;
+}
+#footer td:first {
+ border-left: solid 1px #1F9098;
+ float: left;
+ padding: 20px;
+ text-align: center;
+}
+#footer td+td {
+	border-left: solid 1px #1F9098;
+	float: left;
+	padding: 20px;
+	text-align: center;
 }
