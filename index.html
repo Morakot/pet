@@ -6,7 +6,7 @@
 <title>同立</title>
 </head>
 <div id="header">
-  <div id="" class="shrinker"><img src="site/ipetgogo.png"/>
+  <div class="shrinker"><img src="site/ipetgogo.png" height="100"/>
     <ul>
       <li><a href="javascript:void(0)">首页</a></li>
       <li><a href="javascript:void(0)">医院新闻</a></li>
@@ -19,9 +19,10 @@
     </ul>
   </div>
 </div>
+<div class="stripe"></div>
 <div id="gallery">
   <div class="shrinker">
-    <div id="scrollphoto"><img  src="site/dog.png" width="960" /></div>
+    <div id="scrollphoto"><img  src="site/dog_mini.png" width="960" /></div>
     <ul id="picswitcher">
       <li><a href="javascript:void(0)"></a></li>
       <li><a href="javascript:void(0)"></a></li>
@@ -31,6 +32,7 @@
     </ul>
   </div>
 </div>
+<div class="stripe"></div>
 <div id="content">
   <div class="shrinker">
     <div id="leftpad">
@@ -45,17 +47,21 @@
         <h3><img src="site/getreidefreies-hundefutter.gif" height="32"/>
           <label class="topicn">当值大夫</label>
           <label class="topicen">On Duty</label>
-          <ul>
-            <li><img src="http://www.tlpetgogo.com/tlpetgogo/upfile/proimage/20113212251270152.jpg"/>
-              <p>覃立志</p>
-              <p>老板</p>
-            </li>
-            <li><img src="http://www.tlpetgogo.com/tlpetgogo/upfile/proimage/2013931821929481.jpg"/>
-              <p>李嘉彬</p>
-              <p>老板他弟</p>
-            </li>
-          </ul>
         </h3>
+        <ul>
+          <li><img src="http://www.tlpetgogo.com/tlpetgogo/upfile/proimage/20113212251270152.jpg"/>
+            <div>
+              <p>覃立志</p>
+              <p>动物医生</p>
+            </div>
+          </li>
+          <li><img src="http://www.tlpetgogo.com/tlpetgogo/upfile/proimage/2013931821929481.jpg"/>
+            <div>
+              <p>李嘉彬</p>
+              <p>兽医</p>
+            </div>
+          </li>
+        </ul>
       </div>
       <div class="pad" id="disease">
         <h3><img src="site/hundefutter-ohne-getreide.gif" height="32"/>
@@ -78,24 +84,23 @@
           <label class="topicn">医疗设备</label>
           <label class="topicen">Equipment</label>
         </h3>
-      </div>
-      <div class="pad">
-        <h3><img src="site/hundefutter-kaufen.gif" height="32"/>
-          <label class="topicn">联系我们</label>
-          <label class="topicen">Contact Us</label>
-        </h3>
+        <h4>急诊仪</h4>
+        <p><img src="http://www.tlpetgogo.com/tlpetgogo/upfile/proimage/20109519482827918.bmp" height="100" style="float:left"/>i-STAT 是现代微电子和生物芯片技术结合的高科技产品，是目前世界上功能最多、体积最小、重量最轻（仅520g）、装机量最大（仅中国达3000多台）的血液分析仪。一机可检测：血气/生化、电解质、凝血。它运用纳米技术、并结合微流体技术所制成生物测试芯片，确保测量结果的高准确率和高重复率。微量的血样（20μl）给患者最小的损伤（特别是儿童）。真正床旁即时检测，2-3分钟即可出结果。人体工程学外观设计，人性操作菜单，输入血液可选择。[...]</p>
       </div>
     </div>
-    <div id="rightpad" class="pad" style="visibility:hidden">
+    <div id="rightpad" >
       <div id="news" class="pad">
-        <h3><img src="site/gesundes-hundefutter.gif" height="32"/>最新消息</h3>
+        <h3 id="newsh"><img src="site/gesundes-hundefutter.gif" height="32"/>
+          <label class="topicn">最新消息</label>
+          <label class="topicen">News</label>
+        </h3>
         <ul>
-          <li>werewt</li>
-          <li>werewt</li>
-          <li>werewt</li>
-          <li>werewt</li>
-          <li>werewt</li>
-          <li>werewt</li>
+          <li><a href="javascript:void(0)">声明</a></li>
+          <li><a href="javascript:void(0)">犬只上牌登记的材料</a></li>
+          <li><a href="javascript:void(0)">番禺区严管犬只上牌管理登</a></li>
+          <li><a href="javascript:void(0)">一只普通家鹅引起了很多人</a></li>
+          <li><a href="javascript:void(0)">漏夜急求医只为鹅街坊</a></li>
+          <li><a href="javascript:void(0)">番禺辖区内宠物免费注射狂</a></li>
         </ul>
       </div>
     </div>
@@ -103,19 +108,24 @@
 </div>
 <div id="footer">
   <div class="shrinker">
-    <table>
-      <tr>
-        <td><h3>联系我们</h3>
-          <p>电话：020--34526609</p>
-          <p>传真：020--34526619</p>
-          <p>Mail：gzpydstldwyy@163.com</p></td>
-        <td><p>Copyright 2013 同立宠物医院 All Rights Reserved.后台登陆</p>
-          <p>粤ICP备05102636号</p></td>
-      </tr>
-    </table>
-    <p>Proudly powered by GraphicRazy | Theme: Bouquet by WordPress.com.</p>
+    <div id="contactus">
+      <h3><img src="site/hundefutter-kaufen.gif" height="32"/>
+        <label class="topicn">联系我们</label>
+        <label class="topicen">Contact Us</label>
+      </h3>
+      <p>电话：020--34526609</p>
+      <p>传真：020--34526619</p>
+      <p>Mail：gzpydstldwyy@163.com</p>
+    </div>
+    <div id="copyright">
+      <p>Copyright 2013 同立宠物医院 All Rights Reserved.</p>
+      <p>粤ICP备05102636号</p>
+    </div>
+    <div class="clearer"></div>
+    <p id="signature">2014&nbsp;©&nbsp;Powered by&nbsp;<span>GraphicRazy.com</span></p>
   </div>
 </div>
+
 <body>
 </body>
 </html>
